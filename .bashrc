@@ -22,12 +22,12 @@ function lack() {
 }
 
 # chruby setup, auto-switching
- if [ -e "/usr/local/opt/chruby/share/chruby/chruby.sh" ]; then
-   source /usr/local/opt/chruby/share/chruby/chruby.sh
- fi
- if [ -e "/usr/local/share/chruby/auto.sh" ]; then
-   source /usr/local/share/chruby/auto.sh
- fi
+if [ -e "/usr/local/opt/chruby/share/chruby/chruby.sh" ]; then
+  source /usr/local/opt/chruby/share/chruby/chruby.sh
+fi
+if [ -e "/usr/local/opt/chruby/share/chruby/auto.sh" ]; then
+  source /usr/local/opt/chruby/share/chruby/auto.sh
+fi
 
 # git autocompletion, prompt
 if [ -e "/usr/local/etc/bash_completion.d/git-completion.bash" ]; then

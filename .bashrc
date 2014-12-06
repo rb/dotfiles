@@ -16,6 +16,7 @@ export HOMEBREW_CASK_OPTS="--caskroom=/usr/local/Caskroom"
 alias ls="ls -G"
 alias ll="ls -l"
 alias la="ll -a"
+alias sr="screen -r"
 
 function lack() {
   ack --group --color $* | less -r +k

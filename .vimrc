@@ -12,9 +12,15 @@ set viminfo=%,'50,\"100,:100,n~/.vim/.viminfo
 colorscheme solarized
 set background=dark
 
+" Easily identify when lines are more than 80 characters
+set colorcolumn=81
+
 " Detect filetypes and syntax
 filetype plugin indent on
 syntax on
+
+" Backspace over everything
+set backspace=indent,eol,start
 
 " Show hidden characters
 set list listchars=trail:•

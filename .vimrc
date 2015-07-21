@@ -42,5 +42,8 @@ map <leader>s :w<cr>:call RunNearestSpec()<cr>
 map <leader>l :w<cr>:call RunLastSpec()<cr>
 map <leader>a :w<cr>:call RunAllSpecs()<cr>
 
+" Configure pick
+map <leader>p :call PickFileTab()<cr>
+
 " Set autocmds
 autocmd FileType ruby set autoindent sw=2 sts=2 expandtab

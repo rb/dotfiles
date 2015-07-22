@@ -46,4 +46,6 @@ map <leader>a :w<cr>:call RunAllSpecs()<cr>
 map <leader>p :call PickFileTab()<cr>
 
 " Set autocmds
+autocmd FileType eruby set autoindent sw=2 sts=2 expandtab
+autocmd FileType html set autoindent sw=2 sts=2 expandtab
 autocmd FileType ruby set autoindent sw=2 sts=2 expandtab

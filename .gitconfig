@@ -8,8 +8,6 @@
 [core]
 	excludesfile = ~/.gitignore
 [alias]
-	b  = branch
-	d  = diff
 	ap = add -p
 	ch = checkout
 	co = commit -v

@@ -2,10 +2,12 @@
 	name = Ryan Bergeman
 	email = code@ryanbergeman.com
 [alias]
+	amend = commit --amend --verbose
 	ap = add --patch
 	ch = checkout
 	co = commit --verbose
 	dc = diff --cached
+	di = diff
 	lg = log --abbrev-commit --decorate=short --graph --pretty=oneline
 	st = status --branch --short
 [color]
@@ -14,5 +16,7 @@
 	status = auto
 [core]
 	excludesfile = ~/.gitignore
+[fetch]
+	prune = true
 [push]
 	default = simple

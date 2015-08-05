@@ -8,11 +8,11 @@
 [core]
 	excludesfile = ~/.gitignore
 [alias]
-	ap = add -p
+	ap = add --patch
 	ch = checkout
-	co = commit -v
+	co = commit --verbose
 	dc = diff --cached
-	lg = log --pretty=oneline --abbrev-commit --decorate --graph
-	st = status -sb
+	lg = log --abbrev-commit --decorate=short --graph --pretty=oneline
+	st = status --branch --short
 [push]
 	default = simple

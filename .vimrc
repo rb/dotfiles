@@ -49,3 +49,4 @@ map <leader>p :call PickFileTab()<cr>
 autocmd FileType eruby set autoindent sw=2 sts=2 expandtab
 autocmd FileType html set autoindent sw=2 sts=2 expandtab
 autocmd FileType ruby set autoindent sw=2 sts=2 expandtab
+autocmd FileType gitcommit set textwidth=68 spell

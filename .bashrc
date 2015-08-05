@@ -13,10 +13,6 @@ export LESSHISTFILE=$HOME/tmp/.lesshst
 # Keep Homebrew Cask in /usr/local
 export HOMEBREW_CASK_OPTS="--caskroom=/usr/local/Caskroom"
 
-alias ls="ls -G"
-alias ll="ls -l"
-alias la="ll -a"
-
 function lack() {
   ack --group --color $* | less -r +k
 }

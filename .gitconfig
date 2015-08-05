@@ -1,12 +1,6 @@
 [user]
 	name = Ryan Bergeman
 	email = code@ryanbergeman.com
-[color]
-	branch = auto
-	diff = auto
-	status = auto
-[core]
-	excludesfile = ~/.gitignore
 [alias]
 	ap = add --patch
 	ch = checkout
@@ -14,5 +8,11 @@
 	dc = diff --cached
 	lg = log --abbrev-commit --decorate=short --graph --pretty=oneline
 	st = status --branch --short
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+[core]
+	excludesfile = ~/.gitignore
 [push]
 	default = simple

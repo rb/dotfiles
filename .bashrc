@@ -1,37 +1,50 @@
-# Set editor
-export EDITOR=vi
+# Set locale
+LANG="en_US.UTF-8"
+LANGUAGE="en"
+LC_ALL="en_US.UTF-8"
+LC_CTYPE="en_US.UTF-8"
+export LANG LANGUAGE LC_ALL LC_CTYPE
+
+
+# Set editor and pager
+EDITOR="vim"
+LESSHISTFILE="-"
+PAGER="less -R"
+export EDITOR LESSHISTFILE PAGER
+
 
 # Configure shell history
-export HISTCONTROL=erasedups
-export HISTSIZE=10000
-export HISTFILE=$HOME/.history
-export SAVEHIST=$HISTSIZE
+HISTCONTROL="ignoreboth"
+HISTFILE="$HOME/.history"
+HISTFILESIZE=10000
+HISTSIZE=10000
+SAVEHIST=10000
+export HISTCONTROL HISTFILE HISTFILESIZE HISTSIZE SAVEHIST
 
-# Place `less` history in ~/tmp
-export LESSHISTFILE=$HOME/tmp/.lesshst
 
 # Keep Homebrew Cask in /usr/local
 export HOMEBREW_CASK_OPTS="--caskroom=/usr/local/Caskroom"
 
-function lack() {
-  ack --group --color $* | less -r +k
-}
 
-# chruby setup, auto-switching
+# Initialize chruby, enable auto-switching
 if [ -e "/usr/local/opt/chruby/share/chruby/chruby.sh" ]; then
   source /usr/local/opt/chruby/share/chruby/chruby.sh
 fi
+
 if [ -e "/usr/local/opt/chruby/share/chruby/auto.sh" ]; then
   source /usr/local/opt/chruby/share/chruby/auto.sh
 fi
 
-# git autocompletion, prompt
+
+# Set Git autocompletion, prompt
 if [ -e "/usr/local/etc/bash_completion.d/git-completion.bash" ]; then
   source /usr/local/etc/bash_completion.d/git-completion.bash
 fi
+
 if [ -e "/usr/local/etc/bash_completion.d/git-prompt.sh" ]; then
   source /usr/local/etc/bash_completion.d/git-prompt.sh
 fi
 
-PS1='${PWD##*/}$(__git_ps1 "@%s") ¶ '
 GIT_PS1_SHOWDIRTYSTATE=*
+PS1='${PWD##*/}$(__git_ps1 "@%s") ¶ '
+export GIT_PS1_SHOWDIRTYSTATE PS1

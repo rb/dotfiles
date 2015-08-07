@@ -8,6 +8,7 @@
 	co = commit --verbose
 	dc = diff --cached
 	di = diff
+	gl = log --extended-regexp --regexp-ignore-case --grep
 	lg = log --abbrev-commit --decorate=short --graph --pretty=oneline
 	st = status --branch --short
 [color]

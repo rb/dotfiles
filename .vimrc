@@ -46,7 +46,8 @@ map <leader>a :w<cr>:call RunAllSpecs()<cr>
 map <leader>p :call PickFileTab()<cr>
 
 " Set autocmds
-autocmd FileType eruby set autoindent sw=2 sts=2 expandtab
-autocmd FileType html set autoindent sw=2 sts=2 expandtab
-autocmd FileType ruby set autoindent sw=2 sts=2 expandtab
-autocmd FileType gitcommit set textwidth=68 spell
+autocmd BufRead,BufNewFile *.text set filetype=text
+
+autocmd FileType eruby,html,ruby,yaml set autoindent expandtab shiftwidth=2 softtabstop=2
+autocmd FileType gitcommit set spell textwidth=68
+autocmd FileType text setlocal spell

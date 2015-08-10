@@ -8,6 +8,9 @@ execute pathogen#infect()
 " Set .viminfo... info
 set viminfo=%,'50,\"100,:100,n~/.vim/.viminfo
 
+" Retain more history
+set history=500
+
 " Set colorscheme
 colorscheme solarized
 set background=dark

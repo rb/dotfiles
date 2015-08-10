@@ -16,7 +16,7 @@ colorscheme solarized
 set background=dark
 
 " Easily identify when lines are more than 80 characters
-set colorcolumn=81
+set colorcolumn=80
 
 " Detect filetypes and syntax
 filetype plugin indent on

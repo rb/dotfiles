@@ -14,8 +14,6 @@
 	st = status --branch --short
 [color]
 	ui = auto
-[core]
-	excludesfile = ~/.gitignore
 [fetch]
 	prune = true
 [push]

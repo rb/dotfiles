@@ -13,9 +13,7 @@
 	lg = log --abbrev-commit --decorate=short --graph --pretty=oneline
 	st = status --branch --short
 [color]
-	branch = auto
-	diff = auto
-	status = auto
+	ui = auto
 [core]
 	excludesfile = ~/.gitignore
 [fetch]

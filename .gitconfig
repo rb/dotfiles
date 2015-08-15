@@ -7,7 +7,7 @@
 	dc = diff --cached
 	di = diff
 	gl = log --extended-regexp --regexp-ignore-case --grep
-	lg = log --abbrev-commit --decorate=short --graph --pretty=oneline
+	lg = log --decorate --graph --oneline
 	sh = show
 	st = status --branch --short
 [color]

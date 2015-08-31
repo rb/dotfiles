@@ -9,6 +9,7 @@
 	ff = merge --ff-only
 	gl = log --extended-regexp --regexp-ignore-case --grep
 	lg = log --abbrev-commit --decorate=short --graph --pretty=oneline
+	sh = show
 	st = status --branch --short
 [color]
 	ui = auto

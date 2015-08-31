@@ -2,10 +2,8 @@
 	name = Ryan Bergeman
 	email = code@ryanbergeman.com
 [alias]
-	amend = commit --amend --verbose
 	ap = add --patch
 	ch = checkout
-	co = commit --verbose
 	dc = diff --cached
 	di = diff
 	ff = merge --ff-only

@@ -6,7 +6,6 @@
 	ch = checkout
 	dc = diff --cached
 	di = diff
-	ff = merge --ff-only
 	gl = log --extended-regexp --regexp-ignore-case --grep
 	lg = log --abbrev-commit --decorate=short --graph --pretty=oneline
 	sh = show

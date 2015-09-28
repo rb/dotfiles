@@ -44,7 +44,7 @@ let mapleader = ","
 map <leader>w :w<cr>
 
 " Configure vim-rspec
-let g:rspec_command = "!time ./bin/rspec {spec}"
+let g:rspec_command = "!time ./bin/rspec --format=documentation {spec}"
 map <leader>t :w<cr>:call RunCurrentSpecFile()<cr>
 map <leader>s :w<cr>:call RunNearestSpec()<cr>
 map <leader>l :w<cr>:call RunLastSpec()<cr>

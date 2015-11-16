@@ -10,6 +10,7 @@
 	gl = log --extended-regexp --regexp-ignore-case --grep
 	lg = log --decorate --graph --oneline
 	sh = show
+	squash = commit --squash
 	st = status --branch --short
 [color]
 	ui = auto

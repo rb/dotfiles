@@ -37,6 +37,12 @@ if [ -e "/usr/local/opt/chruby/share/chruby/auto.sh" ]; then
 fi
 
 
+# Initialize rbenv
+if command -v rbenv &> /dev/null; then
+  eval "$(rbenv init -)"
+fi
+
+
 # Set Git autocompletion, prompt
 if [ -e "/usr/local/etc/bash_completion.d/git-completion.bash" ]; then
   source /usr/local/etc/bash_completion.d/git-completion.bash

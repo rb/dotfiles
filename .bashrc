@@ -14,15 +14,6 @@ VISUAL="vim"
 export EDITOR LESSHISTFILE PAGER VISUAL
 
 
-# Configure shell history
-HISTCONTROL="ignoreboth"
-HISTFILE="$HOME/.history"
-HISTFILESIZE=10000
-HISTSIZE=10000
-SAVEHIST=10000
-export HISTCONTROL HISTFILE HISTFILESIZE HISTSIZE SAVEHIST
-
-
 # Keep Homebrew Cask in /usr/local
 export HOMEBREW_CASK_OPTS="--caskroom=/usr/local/Caskroom"
 

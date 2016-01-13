@@ -19,3 +19,6 @@
 	prune = true
 [push]
 	default = simple
+[stash]
+	showPatch = true
+	showStat = false

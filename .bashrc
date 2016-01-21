@@ -13,6 +13,10 @@ PAGER="less -R"
 VISUAL="vim"
 export EDITOR LESSHISTFILE PAGER VISUAL
 
+# Configure shell history
+HISTFILESIZE=50000
+HISTSIZE=50000
+export HISTFILESIZE HISTSIZE
 
 # Keep Homebrew Cask in /usr/local
 export HOMEBREW_CASK_OPTS="--caskroom=/usr/local/Caskroom"

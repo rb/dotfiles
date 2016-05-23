@@ -20,6 +20,8 @@
 	prune = true
 [push]
 	default = simple
+[rebase]
+	autoSquash = true
 [stash]
 	showPatch = true
 	showStat = false

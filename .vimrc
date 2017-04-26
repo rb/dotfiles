@@ -36,6 +36,9 @@ set list listchars=trail:•
 " Use relative numbering
 set nonumber relativenumber
 
+" Use more natural split locations
+set splitbelow splitright
+
 " Show cursor positioning, incomplete commands
 set ruler showcmd
 

@@ -9,7 +9,7 @@ execute pathogen#infect()
 set viminfo=%,'50,\"100,:100,n~/.vim/.viminfo
 
 " Retain more history
-set history=500
+set history=10000
 
 " Don't keep backups (or swaps)
 set nobackup

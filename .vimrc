@@ -11,10 +11,8 @@ set viminfo=%,'50,\"100,:100,n~/.vim/.viminfo
 " Retain more history
 set history=10000
 
-" Don't keep backups (or swaps)
-set nobackup
-set noswapfile
-set nowritebackup
+" Don't keep backups or swaps
+set nobackup noswapfile nowritebackup
 
 " Set colorscheme
 color badwolf

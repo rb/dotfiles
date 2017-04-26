@@ -19,3 +19,6 @@
 [submodule ".vim/bundle/pick.vim"]
 	path = .vim/bundle/pick.vim
 	url = git@github.com:thoughtbot/pick.vim.git
+[submodule ".vim/bundle/badwolf"]
+	path = .vim/bundle/badwolf
+	url = git@github.com:sjl/badwolf.git

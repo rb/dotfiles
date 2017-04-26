@@ -17,8 +17,9 @@ set noswapfile
 set nowritebackup
 
 " Set colorscheme
-colorscheme solarized
-set background=dark
+color badwolf
+let g:badwolf_darkgutter=1
+let g:badwolf_tabline=0
 
 " Easily identify when lines are more than 80 characters
 set colorcolumn=80

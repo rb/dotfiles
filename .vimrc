@@ -58,6 +58,6 @@ map <leader>p :call PickFileTab()<cr>
 " Set autocmds
 autocmd BufRead,BufNewFile *.text set filetype=text
 
-autocmd FileType eruby,html,ruby,yaml set autoindent expandtab shiftwidth=2 softtabstop=2
+autocmd FileType coffee,eruby,html,ruby,yaml set autoindent expandtab shiftwidth=2 softtabstop=2
 autocmd FileType gitcommit setlocal spell textwidth=68 colorcolumn=69
 autocmd FileType text setlocal spell

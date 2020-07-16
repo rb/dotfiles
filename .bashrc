@@ -18,9 +18,6 @@ HISTFILESIZE=50000
 HISTSIZE=50000
 export HISTFILESIZE HISTSIZE
 
-# Keep Homebrew Cask in /usr/local
-export HOMEBREW_CASK_OPTS="--caskroom=/usr/local/Caskroom"
-
 
 # Initialize chruby, enable auto-switching
 if [ -e "/usr/local/opt/chruby/share/chruby/chruby.sh" ]; then

@@ -11,8 +11,10 @@
 	fixup = commit --fixup
 	gl = log --extended-regexp --regexp-ignore-case --grep
 	lg = log --decorate --graph --oneline
+	master = checkout master
 	sh = show
 	squash = commit --verbose --squash
+	ss = show --stat
 	st = status --branch --short
 [color]
 	ui = auto

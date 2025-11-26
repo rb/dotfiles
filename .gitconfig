@@ -1,7 +1,10 @@
 [user]
 	name = Ryan Bergeman
 	email = code@ryanbergeman.com
+[advice]
+	detachedHead = false
 [alias]
+	amend = commit --amend --verbose
 	ap = add --patch
 	ch = checkout
 	dc = diff --cached
@@ -11,13 +14,15 @@
 	fixup = commit --fixup
 	gl = log --extended-regexp --regexp-ignore-case --grep
 	lg = log --decorate --graph --oneline
-	master = checkout master
 	sh = show
 	squash = commit --verbose --squash
 	ss = show --stat
 	st = status --branch --short
+	sw = switch
 [color]
 	ui = auto
+[core]
+	editor = vim
 [fetch]
 	prune = true
 [push]
